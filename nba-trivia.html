@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+   
+    
+
+    <title>NBA Trivia</title>
+    <!--CSS-->
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: larger;
+            background-image: url('https://w0.peakpx.com/wallpaper/657/828/HD-wallpaper-nba-logo-blue-stone-background-nba-grunge-logo-national-basketball-association-nba-emblem-usa-basketball.jpg');
+            background-size: cover;
+        }
+
+        .option {
+            display: block;
+            margin: 20px auto;
+            box-shadow: 10px 5px;
+        }
+
+        #trivia-container {
+            margin: auto;
+            color: white;
+            background: rgba(0, 0, 0, 0.733);
+            max-width: 40%;
+            height: 500px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 5px 10px;
+            
+        }
+
+        #next-btn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+        }
+
+        #question, header {
+            text-align: center;
+            background: rgba(218, 7, 7, 0.384);
+            border-radius: 10px;
+            box-shadow: 5px 5px;
+        }
+
+        #results {
+            background-color: rgba(0, 0, 0, 0.452);
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 5px 5px;
+            margin: 10px;
+            
+        }
+
+        button:hover {
+            font-size: large;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<main id="trivia-container">
+
+    <header>
+        <h1>NBA Trivia</h1>
+    </header>
+
+    <section id="question-section">
+        <p id="question"></p>
+    </section>
+
+    <section id="options-section">
+        <div id="options"></div>
+    </section>
+
+    <section id="controls-section">
+        
+        <button id="next-btn">Next</button>
+    </section>
+
+    <section id="results-section">
+        <p id="results"></p>
+    </section>
+</main>
+
+<div>
+    <button onclick="location.href='index.html'" class="btn btn-primary d-block mx-auto mt-5">Home Screen</button>
+  </div>
+
+<script>
+    const questions = [
+    {
+    question: "What year was the NBA founded?",
+    options: ["1943", "1944", "1945", "1946"],
+    correct: "1946"
+    },
+
+    {
+    question: "What team drafted Kobe Bryant?",
+    options: ["Los Angeles Lakers", "Charlotte Hornets", "New Orleans Pelicans", "Milwaukee Bucks"],
+    correct: "Charlotte Hornets"
+    },
+
+    {
+    question: "Which NBA player has won the most championships?",
+    options: ["Lebron James", "Michael Jordan", "Bill Russell", "Dwayne Wade"],
+    correct: "Bill Russell"
+    },
+
+    {
+    question: "What year did Michael Jordan first retire from the NBA?",
+    options: ["1993", "1998", "1990", "1995"],
+    correct: "1993"
+    },
+
+    {
+    question: "Who is the shortest player in NBA history?",
+    options: ["Calvin Murphy", "Spudd Web", "Muggsy Bogues", "Keith Jennings"],
+    correct: "Muggsy Bogues"
+    },
+
+    {
+    question: "Which team drafted LeBron James?",
+    options: ["Miami Heat", "Cleveland Cavaliers", "Los Angeles Lakers", "Golden State Warriors"],
+    correct: "Cleveland Cavaliers"
+    },
+
+    {
+    question: "What year did the NBA introduce the draft lottery?",
+    options: ["1990", "1986", "1994", "1985"],
+    correct: "1985"
+    },
+
+    {
+    question: "What team did Shaquille O’Neal play for when he won his first NBA championship?",
+    options: ["Miami Heat", "Orlando Magic", "Los Angeles Lakers", "Phoenix Suns"],
+    correct: "Los Angeles Lakers"
+    },
+
+    {
+    question: "Which team won the first NBA championship?",
+    options: ["LA Clippers", "New York Knicks", "Philadelphia Warriors", "Miami Heat"],
+    correct: "Philadelphia Warriors"
+    },
+
+    {
+    question: "What year did the NBA introduce the Rookie of the Year award?",
+    options: ["1953", "1960", "1955", "1950"],
+    correct: "1953"
+    },
+
+    {
+    question: "Who holds the record for most steals in NBA history?",
+    options: ["John Stockton", "Michael Jordan", "Steph Curry", "Kobe Bryant"],
+    correct: "John Stockton"
+    },
+
+    {
+    question: "Which player has won the most NBA scoring titles?",
+    options: ["Wilt Chamberlain", "Kevin Durant", "Michael Jordan", "Devin Booker"],
+    correct: "Michael Jordan"
+    },
+
+    {
+    question: "What year did the NBA introduce the play-in tournament?",
+    options: ["2000", "2010", "1990", "2020"],
+    correct: "2020"
+    },
+
+    {
+    question: "Which player has the nickname 'The Admiral'?",
+    options: ["Hakeem Olajuwon", "Gary Payton", "Charles Barkley", "David Robinson"],
+    correct: "David Robinson"
+    },
+
+    {
+    question: "Who was the first player to average a triple-double in multiple seasons?",
+    options: ["Paul Pierce", "Russell Westbrook", "Steph Curry", "Devin Booker"],
+    correct: "Russell Westbrook"
+    },
+    
+    {
+    question: "Who holds the record for most three-pointers made in a single game?",
+    options: ["Klay Thompson", "Kyrie Irving", "Chris Paul", "Larry Bird"],
+    correct: "Klay Thompson"
+    },
+
+    {
+    question: "What year did the NBA introduce the restricted area arc?",
+    options: ["1993", "1990", "1997", "1990"],
+    correct: "1997"
+    },
+
+    {
+    question: "What year did the NBA introduce the replay center?",
+    options: ["2010", "2014", "2011", "2020"],
+    correct: "2014"
+    },
+
+    {
+    question: "Who was the first player to be drafted straight out of high school?",
+    options: ["Moses Malone", "Lebron James", "Reggie Harding", "Kwame Brown"],
+    correct: "Reggie Harding"
+    },
+
+    {
+    question: "Which NBA team has the most championships?",
+    options: ["New York Knicks", "LA Clippers", "Miami Heat", "Boston Celtics"],
+    correct: "Boston Celtics"
+    }
+
+    
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    const questionEl = document.querySelector("#question");
+    const optionsEl = document.querySelector("#options");
+    const resultsEl = document.querySelector("#results");
+    const nextBtn = document.querySelector("#next-btn");
+
+    function loadQuestion() {
+        optionsEl.innerHTML = ""
+        resultsEl.innerText = ""
+
+        const currentQuestion = questions[currentQuestionIndex];
+        questionEl.innerText = currentQuestion.question;
+
+        currentQuestion.options.forEach((option, index) => {
+            const button = document.createElement("button");
+            button.innerText = option;
+            button.classList.add("option", "btn", "btn-light", "btn-lg");
+            button.onclick = () => checkAnswer(index);
+            optionsEl.appendChild(button);            
+        });
+    }
+
+    function checkAnswer(selectedIndex) {
+        const currentQuestion = questions[currentQuestionIndex];
+        const selectedAnswer = currentQuestion.options[selectedIndex];
+
+        if (selectedAnswer === currentQuestion.correct) {
+            resultsEl.innerText = "Correct!";
+            resultsEl.style.color = "green";
+            score++;
+        } else {
+            resultsEl.innerText = "Wrong! The correct answer was " + currentQuestion.correct + "!";
+            resultsEl.style.color = "red";
+        }
+        nextBtn.style.display = "block";
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+            loadQuestion();
+            nextBtn.style.display = "none";
+        } else {
+            endTrivia();
+        }
+    });
+
+    function endTrivia() {
+        questionEl.innerText = `Game Over! Your score: ${score}/${questions.length}`;
+        optionsEl.innerHTML = "";
+        nextBtn.style.display = "none";
+        resultsEl.innerText = "";
+
+    }
+
+    loadQuestion();
+
+</script>
+</body>
+</html>
