@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLS Trivia Game</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .trivia-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .question {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+    .answer {
+      margin-bottom: 10px;
+    }
+    .result {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .logo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      cursor: pointer;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+    h2 {
+      color: black;
+    }
+  </style>
+</head>
+<body class="bg-primary">
+  <div class="logo-container mt-3">
+    <a href="index.html">
+      <img src="./images/mls.jpeg" alt="Home" class="logo">
+    </a>
+  </div>
+  <div>
+    <button onclick="location.href='index.html'" class="btn btn-danger d-block mx-auto mt-3">Home Screen</button>
+  </div>
+
+  <div class="trivia-container text-center border border-dangerborder-3 rounded">
+    <h1 class="mb-4">MLS Trivia Game</h1>
+    <div id="game">
+      <p class="question" id="question"></p>
+      <div id="answers" class="mb-4"></div>
+      <button id="next-btn" class="btn btn-primary d-block mx-auto" style="display: none;">Next Question</button>
+      <button id="prev-btn" class="btn btn-secondary d-block mx-auto mt-3" style="display: none;">Previous Question</button>
+      <p class="result" id="result"></p>
+      <p class="score" id="score">Score: 0</p>
+    </div>
+  </div>
+
+<script>
+    const questions = [
+        {
+            question: "Which team won the MLS Cup in the 2009?",
+            answers: ["Real Salt Lake", "FC Dallas", "Chivas USA", "Sporting KC"],
+            correct: "Real Salt Lake"
+            },
+
+            {
+            question: "What is the name of the LA Galaxy's soccer stadium?",
+            answers: ["Home Depot Center", "Staples Center", "The Coliseum", "Galaxy Field"],
+            correct: "Home Depot Center"
+            },
+
+            {
+            question: "In which year was Major League Soccer founded?",
+            answers: ["1984", "1993", "1970", "2005"],
+            correct: "1993"
+            },
+
+            {
+            question: "Who won the MLS MVP award in the 2009 season?",
+            answers: ["Chris Rolfe", "Edson Buddle", "Landon Donovan", "David Beckham"],
+            correct: "Landon Donovan"
+            },
+
+            {
+            question: "Who was the MLS coach of the year in the 2009 season?",
+            answers: ["Bob Bradley", "Diego Maradona", "Jurgen Klinsmann", "Bruce Arena"],
+            correct: "Bruce Arena"
+            },
+
+            {
+            question: "What is the name of the Chicago Fire's soccer stadium?",
+            answers: ["Toyota Park", "Home Depot Center", "Soldier Field", "Ford Field"],
+            correct: "Toyota Park"
+            },
+
+            {
+            question: "In which stadium does DC United play their home games?",
+            answers: ["The Emirates", "Toyota Park", "Ford Field", "RFK Stadium"],
+            correct: "RFK Stadium"
+            },
+
+            {
+            question: "Who wore number 17 for the New York Red Bulls in the 2011 season?",
+            answers: ["Thierry Henry", "Landon Donovan", "Juan Agudelo", "Chris Rolfe"],
+            correct: "Juan Agudelo"
+            },
+
+            {
+            question: "Which French player captained the New York Red Bulls in the 2011 season?",
+            answers: ["Juan Agudelo", "Zinedine Zidane", "Thierry Henry", "John Terry"],
+            correct: "Thierry Henry"
+            },
+
+            {
+            question: "The Vancouver Whitecaps lost to which EPL team in the 2011 World Football Challenge?",
+            answers: ["Barcelona", "AC Milan", "Manchester City", "Real Madrid"],
+            correct: "Manchester City"
+            },
+
+            {
+            question: "The New England Revolution lost to which EPL team in the 2011 World Football Challenge?",
+            answers: ["Manchester United", "Glasgow", "Real Madrid", "AC Milan"],
+            correct: "Manchester United"
+            },
+
+            {
+            question: "The Chicago Fire lost to which EPL team in the 2011 World Football Challenge?",
+            answers: ["Inter Milan", "AC Milan", "Manchester United", "Real Madrid"],
+            correct: "Manchester United"
+            },
+
+            {
+            question: "How many Canadian soccer teams played in the MLS in the 2011 season?",
+            answers: ["Zero", "Two", "Five", "Ten"],
+            correct: "Two"
+            },
+
+            {
+            question: "How many teams were invited to the MLS Cup Playoffs in 2010?",
+            answers: ["Eight", "Two", "Fourteen", "Six"],
+            correct: "Eight"
+            },
+
+            {
+            question: "Who was the goalkeeper named on the MLS All-Time Best XI list in 2005?",
+            answers: ["Paul Bastock", "Scott Allison", "Tony Meola", "Jeff Cassar"],
+            correct: "Tony Meola"
+            } 
+  ];
+
+  let currentQuestionIndex = 0;
+  let score = 0;
+
+  const questionEl = document.getElementById("question");
+  const answersEl = document.getElementById("answers");
+  const nextBtn = document.getElementById("next-btn");
+  const prevBtn = document.getElementById("prev-btn");
+  const resultEl = document.getElementById("result");
+  const scoreEl = document.getElementById("score");
+
+  function loadQuestion() {
+    resultEl.textContent = "";
+    nextBtn.style.display = currentQuestionIndex < questions.length - 1 ? "block" : "none";
+    prevBtn.style.display = currentQuestionIndex > 0 ? "block" : "none";
+
+    const currentQuestion = questions[currentQuestionIndex];
+    questionEl.textContent = currentQuestion.question;
+    answersEl.innerHTML = "";
+
+    currentQuestion.answers.forEach(answer => {
+      const button = document.createElement("button");
+      button.textContent = answer;
+      button.classList.add("btn", "btn-outline-primary", "d-block", "mx-auto", "mb-2");
+      button.addEventListener("click", () => selectAnswer(answer));
+      answersEl.appendChild(button);
+    });
+  }
+
+  function selectAnswer(selected) {
+    const currentQuestion = questions[currentQuestionIndex];
+    if (selected === currentQuestion.correct) {
+      resultEl.textContent = "Correct!";
+      resultEl.style.color = "green";
+      score++;
+      scoreEl.textContent = `Score: ${score}`;
+    } else {
+      resultEl.textContent = `Wrong! The correct answer was: ${currentQuestion.correct}`;
+      resultEl.style.color = "red";
+    }
+    nextBtn.style.display = currentQuestionIndex < questions.length - 1 ? "block" : "none";
+    prevBtn.style.display = currentQuestionIndex > 0 ? "block" : "none";
+  }
+
+  nextBtn.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length - 1) {
+      currentQuestionIndex++;
+      loadQuestion();
+    }
+  });
+
+  prevBtn.addEventListener("click", () => {
+    if (currentQuestionIndex > 0) {
+      currentQuestionIndex--;
+      loadQuestion();
+    }
+  });
+
+  loadQuestion();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
