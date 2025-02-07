@@ -1,0 +1,493 @@
+{
+    "NFL": [
+        {
+            "question": "Which team won the first Super Bowl?",
+            "options": ["Green Bay Packers", "New England Patriots", "Dallas Cowboys", "Pittsburgh Steelers"],
+            "answer": "Green Bay Packers"
+        },
+        {
+            "question": "Who holds the NFL record for most career passing touchdowns?",
+            "options": ["Tom Brady", "Drew Brees", "Peyton Manning", "Brett Favre"],
+            "answer": "Tom Brady"
+        },
+        {
+            "question": "Which player has the most rushing yards in NFL history?",
+            "options": ["Walter Payton", "Barry Sanders", "Emmitt Smith", "Jim Brown"],
+            "answer": "Emmitt Smith"
+        },
+        {
+            "question": "Which team has won the most Super Bowls?",
+            "options": ["New England Patriots", "Pittsburgh Steelers", "San Francisco 49ers", "Dallas Cowboys"],
+            "answer": "New England Patriots"
+        },
+        {
+            "question": "Who was the first quarterback to throw for 5,000 yards in a single season?",
+            "options": ["Dan Marino", "Tom Brady", "Peyton Manning", "Patrick Mahomes"],
+            "answer": "Dan Marino"
+        },
+        {
+            "question": "Which NFL team was the last to go undefeated in a season, including the Super Bowl?",
+            "options": ["Miami Dolphins", "New England Patriots", "Chicago Bears", "San Francisco 49ers"],
+            "answer": "Miami Dolphins"
+        },
+        {
+            "question": "Who has the most career sacks in NFL history?",
+            "options": ["Bruce Smith", "Reggie White", "Michael Strahan", "Lawrence Taylor"],
+            "answer": "Bruce Smith"
+        },
+        {
+            "question": "Which team drafted Peyton Manning first overall?",
+            "options": ["Indianapolis Colts", "Denver Broncos", "New England Patriots", "Tennessee Titans"],
+            "answer": "Indianapolis Colts"
+        },
+        {
+            "question": "Who was the first player to rush for 2,000 yards in a season?",
+            "options": ["Eric Dickerson", "Barry Sanders", "O.J. Simpson", "Adrian Peterson"],
+            "answer": "O.J. Simpson"
+        },
+        {
+            "question": "Which NFL team has the longest winning streak in regular season history?",
+            "options": ["New England Patriots", "San Francisco 49ers", "Green Bay Packers", "Indianapolis Colts"],
+            "answer": "New England Patriots"
+        },
+        {
+            "question": "Which wide receiver has the most career receiving yards?",
+            "options": ["Jerry Rice", "Randy Moss", "Terrell Owens", "Larry Fitzgerald"],
+            "answer": "Jerry Rice"
+        },
+        {
+            "question": "Which team won the first-ever Monday Night Football game?",
+            "options": ["Cleveland Browns", "New York Jets", "Dallas Cowboys", "Baltimore Colts"],
+            "answer": "Cleveland Browns"
+        },
+        {
+            "question": "Who is the youngest quarterback to win a Super Bowl?",
+            "options": ["Tom Brady", "Ben Roethlisberger", "Patrick Mahomes", "Joe Montana"],
+            "answer": "Ben Roethlisberger"
+        },
+        {
+            "question": "Which team was nicknamed 'The Greatest Show on Turf'?",
+            "options": ["San Francisco 49ers", "New England Patriots", "St. Louis Rams", "Dallas Cowboys"],
+            "answer": "St. Louis Rams"
+        },
+        {
+            "question": "Which NFL player was known as 'Prime Time'?",
+            "options": ["Jerry Rice", "Deion Sanders", "Michael Irvin", "Terrell Owens"],
+            "answer": "Deion Sanders"
+        },
+        {
+            "question": "Who was the first defensive player to win Super Bowl MVP?",
+            "options": ["Von Miller", "Ray Lewis", "Chuck Howley", "Richard Dent"],
+            "answer": "Chuck Howley"
+        },
+        {
+            "question": "Which quarterback has the most Super Bowl appearances?",
+            "options": ["Tom Brady", "Joe Montana", "Peyton Manning", "John Elway"],
+            "answer": "Tom Brady"
+        },
+        {
+            "question": "Who was the first NFL player to score 100 career touchdowns?",
+            "options": ["Jim Brown", "Walter Payton", "Jerry Rice", "Barry Sanders"],
+            "answer": "Jim Brown"
+        },
+        {
+            "question": "Which team did Joe Montana play for after leaving the 49ers?",
+            "options": ["Kansas City Chiefs", "New York Jets", "Denver Broncos", "Buffalo Bills"],
+            "answer": "Kansas City Chiefs"
+        }
+    ],
+    "MLB": [
+        {
+            "question": "Which MLB team has won the most World Series titles?",
+            "options": ["New York Yankees", "St. Louis Cardinals", "Los Angeles Dodgers", "Boston Red Sox"],
+            "answer": "New York Yankees"
+        },
+        {
+            "question": "Who holds the record for most home runs in a single MLB season?",
+            "options": ["Barry Bonds", "Mark McGwire", "Sammy Sosa", "Babe Ruth"],
+            "answer": "Barry Bonds"
+        },
+        {
+            "question": "Which MLB player has the most career hits?",
+            "options": ["Derek Jeter", "Hank Aaron", "Pete Rose", "Ty Cobb"],
+            "answer": "Pete Rose"
+        },
+        {
+            "question": "Who was the first player to reach 500 home runs?",
+            "options": ["Babe Ruth", "Hank Aaron", "Willie Mays", "Barry Bonds"],
+            "answer": "Babe Ruth"
+        },
+        {
+            "question": "Which pitcher has the most career strikeouts?",
+            "options": ["Nolan Ryan", "Randy Johnson", "Roger Clemens", "Steve Carlton"],
+            "answer": "Nolan Ryan"
+        },
+        {
+            "question": "Which team broke the 'Curse of the Bambino' by winning the 2004 World Series?",
+            "options": ["Boston Red Sox", "Chicago Cubs", "New York Yankees", "Los Angeles Dodgers"],
+            "answer": "Boston Red Sox"
+        },
+        {
+            "question": "Who was the last MLB player to hit .400 in a season?",
+            "options": ["Ted Williams", "Joe DiMaggio", "Tony Gwynn", "Ichiro Suzuki"],
+            "answer": "Ted Williams"
+        },
+        {
+            "question": "Which team won the first-ever World Series?",
+            "options": ["Boston Red Sox", "Pittsburgh Pirates", "New York Giants", "Chicago Cubs"],
+            "answer": "Boston Red Sox"
+        },
+        {
+            "question": "Which MLB player has the most MVP awards?",
+            "options": ["Barry Bonds", "Mickey Mantle", "Babe Ruth", "Mike Trout"],
+            "answer": "Barry Bonds"
+        },
+        {
+            "question": "Which MLB team has the longest winning streak in a single season?",
+            "options": ["Cleveland Guardians", "New York Yankees", "Oakland Athletics", "Atlanta Braves"],
+            "answer": "Cleveland Guardians"
+        }
+    ],
+    "NBA": [
+        {
+            "question": "What year was the NBA founded?",
+            "options": ["1943", "1944", "1945", "1946"],
+            "answer": "1946"
+        },
+        {
+            "question": "What team drafted Kobe Bryant?",
+            "options": ["Los Angeles Lakers", "Charlotte Hornets", "New Orleans Pelicans", "Milwaukee Bucks"],
+            "answer": "Charlotte Hornets"
+        },
+        {
+            "question": "Which NBA player has won the most championships?",
+            "options": ["LeBron James", "Michael Jordan", "Bill Russell", "Dwyane Wade"],
+            "answer": "Bill Russell"
+        },
+        {
+            "question": "What year did Michael Jordan first retire from the NBA?",
+            "options": ["1993", "1998", "1990", "1995"],
+            "answer": "1993"
+        },
+        {
+            "question": "Who is the shortest player in NBA history?",
+            "options": ["Calvin Murphy", "Spud Webb", "Muggsy Bogues", "Keith Jennings"],
+            "answer": "Muggsy Bogues"
+        },
+        {
+            "question": "Which team drafted LeBron James?",
+            "options": ["Miami Heat", "Cleveland Cavaliers", "Los Angeles Lakers", "Golden State Warriors"],
+            "answer": "Cleveland Cavaliers"
+        },
+        {
+            "question": "What year did the NBA introduce the draft lottery?",
+            "options": ["1990", "1986", "1994", "1985"],
+            "answer": "1985"
+        },
+        {
+            "question": "What team did Shaquille O’Neal play for when he won his first NBA championship?",
+            "options": ["Miami Heat", "Orlando Magic", "Los Angeles Lakers", "Phoenix Suns"],
+            "answer": "Los Angeles Lakers"
+        },
+        {
+            "question": "Which team won the first NBA championship?",
+            "options": ["LA Clippers", "New York Knicks", "Philadelphia Warriors", "Miami Heat"],
+            "answer": "Philadelphia Warriors"
+        },
+        {
+            "question": "What year did the NBA introduce the Rookie of the Year award?",
+            "options": ["1953", "1960", "1955", "1950"],
+            "answer": "1953"
+        },
+        {
+            "question": "Who holds the record for most steals in NBA history?",
+            "options": ["John Stockton", "Michael Jordan", "Stephen Curry", "Kobe Bryant"],
+            "answer": "John Stockton"
+        },
+        {
+            "question": "Which player has won the most NBA scoring titles?",
+            "options": ["Wilt Chamberlain", "Kevin Durant", "Michael Jordan", "Devin Booker"],
+            "answer": "Michael Jordan"
+        },
+        {
+            "question": "What year did the NBA introduce the play-in tournament?",
+            "options": ["2000", "2010", "1990", "2020"],
+            "answer": "2020"
+        },
+        {
+            "question": "Which player has the nickname 'The Admiral'?",
+            "options": ["Hakeem Olajuwon", "Gary Payton", "Charles Barkley", "David Robinson"],
+            "answer": "David Robinson"
+        },
+        {
+            "question": "Who was the first player to average a triple-double in multiple seasons?",
+            "options": ["Paul Pierce", "Russell Westbrook", "Stephen Curry", "Devin Booker"],
+            "answer": "Russell Westbrook"
+        },
+        {
+            "question": "Who holds the record for most three-pointers made in a single game?",
+            "options": ["Klay Thompson", "Kyrie Irving", "Chris Paul", "Larry Bird"],
+            "answer": "Klay Thompson"
+        },
+        {
+            "question": "What year did the NBA introduce the restricted area arc?",
+            "options": ["1993", "1990", "1997", "1990"],
+            "answer": "1997"
+        },
+        {
+            "question": "What year did the NBA introduce the replay center?",
+            "options": ["2010", "2014", "2011", "2020"],
+            "answer": "2014"
+        },
+        {
+            "question": "Who was the first player to be drafted straight out of high school?",
+            "options": ["Moses Malone", "LeBron James", "Reggie Harding", "Kwame Brown"],
+            "answer": "Reggie Harding"
+        },
+        {
+            "question": "Which NBA team has the most championships?",
+            "options": ["New York Knicks", "LA Clippers", "Miami Heat", "Boston Celtics"],
+            "answer": "Boston Celtics"
+        }
+    ],
+    "MLS": [
+        {
+            "question": "Which team won the MLS Cup in 2009?",
+            "options": ["Real Salt Lake", "FC Dallas", "Chivas USA", "Sporting KC"],
+            "answer": "Real Salt Lake"
+        },
+        {
+            "question": "What is the name of the LA Galaxy's soccer stadium?",
+            "options": ["Home Depot Center", "Staples Center", "The Coliseum", "Galaxy Field"],
+            "answer": "Home Depot Center"
+        },
+        {
+            "question": "In which year was Major League Soccer founded?",
+            "options": ["1984", "1993", "1970", "2005"],
+            "answer": "1993"
+        },
+        {
+            "question": "Who won the MLS MVP award in the 2009 season?",
+            "options": ["Chris Rolfe", "Edson Buddle", "Landon Donovan", "David Beckham"],
+            "answer": "Landon Donovan"
+        },
+        {
+            "question": "Who was the MLS Coach of the Year in the 2009 season?",
+            "options": ["Bob Bradley", "Diego Maradona", "Jurgen Klinsmann", "Bruce Arena"],
+            "answer": "Bruce Arena"
+        },
+        {
+            "question": "What is the name of the Chicago Fire's soccer stadium?",
+            "options": ["Toyota Park", "Home Depot Center", "Soldier Field", "Ford Field"],
+            "answer": "Toyota Park"
+        },
+        {
+            "question": "In which stadium does D.C. United play their home games?",
+            "options": ["The Emirates", "Toyota Park", "Ford Field", "RFK Stadium"],
+            "answer": "RFK Stadium"
+        },
+        {
+            "question": "Who wore number 17 for the New York Red Bulls in the 2011 season?",
+            "options": ["Thierry Henry", "Landon Donovan", "Juan Agudelo", "Chris Rolfe"],
+            "answer": "Juan Agudelo"
+        },
+        {
+            "question": "Which French player captained the New York Red Bulls in the 2011 season?",
+            "options": ["Juan Agudelo", "Zinedine Zidane", "Thierry Henry", "John Terry"],
+            "answer": "Thierry Henry"
+        },
+        {
+            "question": "The Vancouver Whitecaps lost to which EPL team in the 2011 World Football Challenge?",
+            "options": ["Barcelona", "AC Milan", "Manchester City", "Real Madrid"],
+            "answer": "Manchester City"
+        },
+        {
+            "question": "The New England Revolution lost to which EPL team in the 2011 World Football Challenge?",
+            "options": ["Manchester United", "Glasgow", "Real Madrid", "AC Milan"],
+            "answer": "Manchester United"
+        },
+        {
+            "question": "The Chicago Fire lost to which EPL team in the 2011 World Football Challenge?",
+            "options": ["Inter Milan", "AC Milan", "Manchester United", "Real Madrid"],
+            "answer": "Manchester United"
+        },
+        {
+            "question": "How many Canadian soccer teams played in the MLS in the 2011 season?",
+            "options": ["Zero", "Two", "Five", "Ten"],
+            "answer": "Two"
+        },
+        {
+            "question": "How many teams were invited to the MLS Cup Playoffs in 2010?",
+            "options": ["Eight", "Two", "Fourteen", "Six"],
+            "answer": "Eight"
+        },
+        {
+            "question": "Who was the goalkeeper named on the MLS All-Time Best XI list in 2005?",
+            "options": ["Paul Bastock", "Scott Allison", "Tony Meola", "Jeff Cassar"],
+            "answer": "Tony Meola"
+        }
+    ],
+    "NHL": [
+        {
+            "question": "Which NHL team has won the most Stanley Cups?",
+            "options": ["Montreal Canadiens", "Toronto Maple Leafs", "Detroit Red Wings", "Boston Bruins"],
+            "answer": "Montreal Canadiens"
+        },
+        {
+            "question": "Who holds the record for the most goals in a single NHL season?",
+            "options": ["Wayne Gretzky", "Mario Lemieux", "Brett Hull", "Alex Ovechkin"],
+            "answer": "Wayne Gretzky"
+        },
+        {
+            "question": "Which team joined the NHL most recently?",
+            "options": ["Seattle Kraken", "Vegas Golden Knights", "Winnipeg Jets", "Utah Hockey Club"],
+            "answer": "Seattle Kraken"
+        },
+        {
+            "question": "What is the NHL trophy awarded for the best goaltender?",
+            "options": ["Hart Trophy", "Vezina Trophy", "Norris Trophy", "Selke Trophy"],
+            "answer": "Vezina Trophy"
+        },
+        {
+            "question": "Who was the first captain of the Vegas Golden Knights?",
+            "options": ["Mark Stone", "Shea Theodore", "Jonathan Marchessault", "Marc-André Fleury"],
+            "answer": "Mark Stone"
+        },
+        {
+            "question": "Which team did the Edmonton Oilers defeat to win their first Stanley Cup in 1984?",
+            "options": ["Philadelphia Flyers", "New York Islanders", "Montreal Canadiens", "Boston Bruins"],
+            "answer": "New York Islanders"
+        },
+        {
+            "question": "Which NHL team is known as the 'Broad Street Bullies'?",
+            "options": ["Boston Bruins", "Chicago Blackhawks", "Philadelphia Flyers", "New York Rangers"],
+            "answer": "Philadelphia Flyers"
+        },
+        {
+            "question": "What year was the NHL founded?",
+            "options": ["1920", "1917", "1945", "1930"],
+            "answer": "1917"
+        },
+        {
+            "question": "Which team did Wayne Gretzky play for after being traded from the Edmonton Oilers?",
+            "options": ["St. Louis Blues", "Los Angeles Kings", "New York Rangers", "Chicago Blackhawks"],
+            "answer": "Los Angeles Kings"
+        },
+        {
+            "question": "Who holds the record for the fastest hat trick in NHL history?",
+            "options": ["Wayne Gretzky", "Bill Mosienko", "Bobby Hull", "Maurice Richard"],
+            "answer": "Bill Mosienko"
+        },
+        {
+            "question": "Which player was nicknamed 'The Golden Jet'?",
+            "options": ["Phil Esposito", "Bobby Hull", "Brett Hull", "Gordie Howe"],
+            "answer": "Bobby Hull"
+        },
+        {
+            "question": "What is the name of the trophy awarded to the NHL's top rookie?",
+            "options": ["Conn Smythe Trophy", "Calder Trophy", "Hart Trophy", "Lady Byng Trophy"],
+            "answer": "Calder Trophy"
+        },
+        {
+            "question": "Which player was the first to score 50 goals in 50 games?",
+            "options": ["Wayne Gretzky", "Mario Lemieux", "Brett Hull", "Maurice Richard"],
+            "answer": "Maurice Richard"
+        },
+        {
+            "question": "What city hosted the first-ever NHL Winter Classic in 2008?",
+            "options": ["Buffalo", "Pittsburgh", "Chicago", "Detroit"],
+            "answer": "Buffalo"
+        },
+        {
+            "question": "Which team has the most wins in a single NHL regular season?",
+            "options": ["Montreal Canadiens", "Detroit Red Wings", "Boston Bruins", "Tampa Bay Lightning"],
+            "answer": "Detroit Red Wings"
+        },
+        {
+            "question": "What is the penalty for high-sticking in the NHL?",
+            "options": ["Double minor or major penalty", "Minor penalty", "Major penalty", "Misconduct penalty"],
+            "answer": "Double minor or major penalty"
+        },
+        {
+            "question": "Which NHL player was the first to score 100 points in a season?",
+            "options": ["Gordie Howe", "Phil Esposito", "Wayne Gretzky", "Maurice Richard"],
+            "answer": "Phil Esposito"
+        },
+        {
+            "question": "What year did the NHL introduce the salary cap?",
+            "options": ["1995", "2005", "2000", "2010"],
+            "answer": "2005"
+        },
+        {
+            "question": "What is the nickname of the NHL team based in Winnipeg?",
+            "options": ["Jets", "Flames", "Thrashers", "Nordiques"],
+            "answer": "Jets"
+        },
+        {
+            "question": "Who was the first American-born player to score 500 career goals?",
+            "options": ["Mike Modano", "Patrick Kane", "Brett Hull", "Joe Mullen"],
+            "answer": "Joe Mullen"
+        },
+        {
+            "question": "Who is the longest-serving captain in NHL history?",
+            "options": ["Joe Sakic", "Mark Messier", "Steve Yzerman", "Zdeno Chara"],
+            "answer": "Steve Yzerman"
+        },
+        {
+            "question": "Which player won the Hart Trophy a record nine times?",
+            "options": ["Gordie Howe", "Wayne Gretzky", "Mario Lemieux", "Bobby Orr"],
+            "answer": "Wayne Gretzky"
+        },
+        {
+            "question": "What is the name of the NHL's championship trophy?",
+            "options": ["Stanley Cup", "Clarence Campbell Bowl", "Prince of Wales Trophy", "Presidents' Trophy"],
+            "answer": "Stanley Cup"
+        },
+        {
+            "question": "Which NHL team is based in Dallas?",
+            "options": ["Coyotes", "Stars", "Kings", "Sharks"],
+            "answer": "Stars"
+        },
+        {
+            "question": "Which team was the first to win back-to-back Stanley Cups in the NHL expansion era?",
+            "options": ["Montreal Canadiens", "New York Islanders", "Philadelphia Flyers", "Edmonton Oilers"],
+            "answer": "Philadelphia Flyers"
+        },
+        {
+            "question": "Which NHL team has the longest Stanley Cup drought?",
+            "options": ["Vancouver Canucks", "Toronto Maple Leafs", "Buffalo Sabres", "Arizona Coyotes"],
+            "answer": "Toronto Maple Leafs"
+        },
+        {
+            "question": "Who was the first goalie to score a goal in the NHL?",
+            "options": ["Billy Smith", "Ron Hextall", "Patrick Roy", "Martin Brodeur"],
+            "answer": "Billy Smith"
+        },
+        {
+            "question": "What year was the NHL All-Star Game first played?",
+            "options": ["1947", "1975", "1967", "1950"],
+            "answer": "1947"
+        },
+        {
+            "question": "Which goalie has the most career wins in NHL history?",
+            "options": ["Patrick Roy", "Dominik Hasek", "Marc-André Fleury", "Martin Brodeur"],
+            "answer": "Martin Brodeur"
+        },
+        {
+            "question": "Who was the first player drafted by the Vegas Golden Knights?",
+            "options": ["Alex Tuch", "William Karlsson", "Marc-André Fleury", "Cody Glass"],
+            "answer": "Cody Glass"
+        },
+        {
+            "question": "Who won the Stanley Cup in 2022?",
+            "options": ["Colorado Avalanche", "Vegas Golden Knights", "Boston Bruins", "Tampa Bay Lightning"],
+            "answer": "Colorado Avalanche"
+        },
+        {
+            "question": "Which NHL team has a shark in their logo?",
+            "options": ["Anaheim Ducks", "Florida Panthers", "San Jose Sharks", "Arizona Coyotes"],
+            "answer": "San Jose Sharks"
+        }
+    ]  
+}
+    

@@ -42,8 +42,8 @@
     }
 
     .logo {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       cursor: pointer;
       object-fit: cover;
@@ -89,200 +89,16 @@
     logo.src = images[currentIndex];
   }, 2000);
 
-  const questions = [
-    { 
-    question: "Which NHL team has won the most Stanley Cups?", 
-    answers: ["Montreal Canadiens", "Toronto Maple Leafs", "Detroit Red Wings", "Boston Bruins"], 
-    correct: "Montreal Canadiens" },
-    { 
-    question: "Who holds the record for the most goals in a single NHL season?", 
-    answers: ["Wayne Gretzky", "Mario Lemieux", "Brett Hull", "Alex Ovechkin"], 
-    correct: "Wayne Gretzky"
-    },
-    { 
-    question: "Which team joined the NHL most recently?", 
-    answers: ["Seattle Kraken", "Vegas Golden Knights", "Winnipeg Jets", "Utah Hockey Club"], 
-    correct: "Seattle Kraken"
-    },
-    {
-      question: "What is the NHL trophy awarded for the best goaltender?",
-      answers: ["Hart Trophy", "Vezina Trophy", "Norris Trophy", "Selke Trophy"],
-      correct: "Vezina Trophy"
-    },
-    {
-      question: "Who was the first captain of the Vegas Golden Knights?",
-      answers: ["Mark Stone", "Shea Theodore", "Jonathan Marchessault", "Marc-André Fleury"],
-      correct: "Mark Stone"
-    },
-   {
-    question: "Which team did the Edmonton Oilers defeat to win their first Stanley Cup in 1984?",
-    answers: ["Philadelphia Flyers", "New York Islanders", "Montreal Canadiens", "Boston Bruins"],
-    correct: "New York Islanders"
-  },
-  {
-    question: "Which NHL team is known as the 'Broad Street Bullies'?",
-    answers: ["Boston Bruins", "Chicago Blackhawks", "Philadelphia Flyers", "New York Rangers"],
-    correct: "Philadelphia Flyers"
-  },
-  {
-    question: "What year was the NHL founded?",
-    answers: ["1920", "1917", "1945", "1930"],
-    correct: "1917"
-  },
-  {
-    question: "Which team did Wayne Gretzky play for after being traded from the Edmonton Oilers?",
-    answers: ["St. Louis Blues", "Los Angeles Kings", "New York Rangers", "Chicago Blackhawks"],
-    correct: "Los Angeles Kings"
-  },
-  {
-    question: "Who holds the record for the fastest hat trick in NHL history?",
-    answers: ["Wayne Gretzky", "Bill Mosienko", "Bobby Hull", "Maurice Richard"],
-    correct: "Bill Mosienko"
-  },
-  {
-    question: "Which player was nicknamed 'The Golden Jet'?",
-    answers: ["Phil Esposito", "Bobby Hull", "Brett Hull", "Gordie Howe"],
-    correct: "Bobby Hull"
-  },
-  {
-    question: "What is the name of the trophy awarded to the NHL's top rookie?",
-    answers: ["Conn Smythe Trophy", "Calder Trophy", "Hart Trophy", "Lady Byng Trophy"],
-    correct: "Calder Trophy"
-  },
-  {
-    question: "Which player was the first to score 50 goals in 50 games?",
-    answers: ["Wayne Gretzky", "Mario Lemieux", "Brett Hull", "Maurice Richard"],
-    correct: "Maurice Richard"
-  },
-  {
-    question: "What city hosted the first-ever NHL Winter Classic in 2008?",
-    answers: ["Buffalo", "Pittsburgh", "Chicago", "Detroit"],
-    correct: "Buffalo"
-  },
-  {
-    question: "Which team has the most wins in a single NHL regular season?",
-    answers: ["Montreal Canadiens", "Detroit Red Wings", "Boston Bruins", "Tampa Bay Lightning"],
-    correct: "Detroit Red Wings"
-  },
-  {
-    question: "What is the penalty for high-sticking in the NHL?",
-    answers: ["Double minor or major penalty", "Minor penalty", "Major penalty", "Misconduct penalty"],
-    correct: "Double minor or major penalty"
-  },
-  {
-    question: "Which NHL player was the first to score 100 points in a season?",
-    answers: ["Gordie Howe", "Phil Esposito", "Wayne Gretzky", "Maurice Richard"],
-    correct: "Phil Esposito"
-  },
-  {
-    question: "What year did the NHL introduce the salary cap?",
-    answers: ["1995", "2005", "2000", "2010"],
-    correct: "2005"
-  },
-  {
-    question: "What is the nickname of the NHL team based in Winnipeg?",
-    answers: ["Jets", "Flames", "Thrashers", "Nordiques"],
-    correct: "Jets"
-  },
-  {
-    question: "Who was the first American-born player to score 500 career goals?",
-    answers: ["Mike Modano", "Patrick Kane", "Brett Hull", "Joe Mullen"],
-    correct: "Joe Mullen"
-  },
-  {
-    question: "Who is the longest-serving captain in NHL history?",
-    answers: ["Joe Sakic", "Mark Messier", "Steve Yzerman", "Zdeno Chara"],
-    correct: "Steve Yzerman"
-  },
-  {
-    question: "Which player won the Hart Trophy a record nine times?",
-    answers: ["Gordie Howe", "Wayne Gretzky", "Mario Lemieux", "Bobby Orr"],
-    correct: "Wayne Gretzky"
-  },
-  {
-    question: "What is the name of the NHL's championship trophy?",
-    answers: ["Stanley Cup", "Clarence Campbell Bowl", "Prince of Wales Trophy", "Presidents' Trophy"],
-    correct: "Stanley Cup"
-  },
-  {
-    question: "Which NHL team is based in Dallas?",
-    answers: ["Coyotes", "Stars", "Kings", "Sharks"],
-    correct: "Stars"
-  },
-  {
-    question: "Who was the youngest player to score 100 points in a season?",
-    answers: ["Wayne Gretzky", "Sidney Crosby", "Connor McDavid", "Mario Lemieux"],
-    correct: "Wayne Gretzky"
-  },
-  {
-    question: "Which team was the first to win back-to-back Stanley Cups in the NHL expansion era?",
-    answers: ["Montreal Canadiens", "New York Islanders", "Philadelphia Flyers", "Edmonton Oilers"],
-    correct: "Philadelphia Flyers"
-  },
-  {
-    question: "Which NHL team has the longest Stanley Cup drought?",
-    answers: ["Vancouver Canucks", "Toronto Maple Leafs", "Buffalo Sabres", "Arizona Coyotes"],
-    correct: "Toronto Maple Leafs"
-  },
-  {
-    question: "Who was the first goalie to score a goal in the NHL?",
-    answers: ["Billy Smith", "Ron Hextall", "Patrick Roy", "Martin Brodeur"],
-    correct: "Billy Smith"
-  },
-  {
-    question: "What year was the NHL All-Star Game first played?",
-    answers: ["1947", "1975", "1967", "1950"],
-    correct: "1947"
-  },
-  {
-    question: "Which goalie has the most career wins in NHL history?",
-    answers: ["Patrick Roy", "Dominik Hasek", "Marc-André Fleury", "Martin Brodeur"],
-    correct: "Martin Brodeur"
-  },
-  {
-    question: "Who was the first player drafted by the Vegas Golden Knights?",
-    answers: ["Alex Tuch", "William Karlsson", "Marc-André Fleury", "Cody Glass"],
-    correct: "Cody Glass"
-  },
-  {
-    question: "Which player scored the famous 'The Goal' while falling to the ice?",
-    answers: ["Wayne Gretzky", "Mario Lemieux", "Steve Yzerman", "Bobby Orr"],
-    correct: "Bobby Orr"
-  },
-  {
-    question: "Who won the Stanley Cup in 2022?",
-    answers: ["Colorado Avalanche", "Vegas Golden Knights", "Boston Bruins", "Tampa Bay Lightning"],
-    correct: "Colorado Avalanche"
-  },
-  {
-    question: "Which NHL team has a shark in their logo?",
-    answers: ["Anaheim Ducks", "Florida Panthers", "San Jose Sharks", "Arizona Coyotes"],
-    correct: "San Jose Sharks"
-  },
-  {
-    question: "Which player has the most career penalty minutes in NHL history?",
-    answers: ["Tiger Williams", "Dale Hunter", "Tie Domi", "Chris Nilan"],
-    correct: "Tiger Williams"
-  },
-  {
-    question: "Which team plays their home games at Madison Square Garden?",
-    answers: ["New York Islanders", "New Jersey Devils", "New York Rangers", "Philadelphia Flyers"],
-    correct: "New York Rangers"
-  },
-  {
-    question: "What year did the NHL introduce the shootout?",
-    answers: ["1999", "2005", "2000", "2010"],
-    correct: "2005"
-  },
-  {
-    question: "Which NHL team has the most consecutive playoff appearances?",
-    answers: ["Detroit Red Wings", "Boston Bruins", "Montreal Canadiens", "Pittsburgh Penguins"],
-    correct: "Boston Bruins"
-  }
-  ];
-
+  let triviaQuestions = [];
   let currentQuestionIndex = 0;
   let score = 0;
+
+  const category = window.location.pathname.includes("nfl") ? "NFL" :
+                window.location.pathname.includes("nba") ? "NBA" :
+                window.location.pathname.includes("mlb") ? "MLB" :
+                window.location.pathname.includes("mls") ? "MLS" :
+                window.location.pathname.includes("nhl") ? "NHL" :
+                null;
 
   const questionEl = document.getElementById("question");
   const answersEl = document.getElementById("answers");
@@ -291,7 +107,72 @@
   const resultEl = document.getElementById("result");
   const scoreEl = document.getElementById("score");
 
+  async function loadQuestions() {
+    try {
+        const response = await fetch('questions.json');
+        const data = await response.json();
+        
+        if (category && data[category]) {
+            triviaQuestions = data[category];
+            loadQuestion();
+        } else {
+            console.error("Category not found or invalid JSON structure.");
+        }
+    } catch (error) {
+        console.error("Error loading questions:", error);
+    }
+  }
+
   function loadQuestion() {
+    resultEl.textContent = "";
+    nextBtn.style.display = currentQuestionIndex < triviaQuestions.length - 1 ? "block" : "none";
+    prevBtn.style.display = currentQuestionIndex > 0 ? "block" : "none";
+
+    const currentQuestion = triviaQuestions[currentQuestionIndex];
+    questionEl.textContent = currentQuestion.question;
+    answersEl.innerHTML = "";
+
+    currentQuestion.options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.classList.add("btn", "btn-outline-primary", "d-block", "mx-auto", "mb-2");
+        button.addEventListener("click", () => selectAnswer(option, currentQuestion.answer));
+        answersEl.appendChild(button);
+    });
+  }
+
+  function selectAnswer(selected, correct) {
+    if (selected === correct) {
+        resultEl.textContent = "Correct!";
+        resultEl.style.color = "green";
+        score++;
+    } else {
+        resultEl.textContent = `Wrong! The correct answer was: ${correct}`;
+        resultEl.style.color = "red";
+    }
+    scoreEl.textContent = `Score: ${score}`;
+    nextBtn.style.display = currentQuestionIndex < triviaQuestions.length - 1 ? "block" : "none";
+    prevBtn.style.display = currentQuestionIndex > 0 ? "block" : "none";
+  }
+
+  nextBtn.addEventListener("click", () => {
+    if (currentQuestionIndex < triviaQuestions.length - 1) {
+        currentQuestionIndex++;
+        loadQuestion();
+    }
+  });
+
+  prevBtn.addEventListener("click", () => {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        loadQuestion();
+    }
+  });
+
+  loadQuestions();
+
+  
+  /*function loadQuestion() {
     resultEl.textContent = "";
     nextBtn.style.display = currentQuestionIndex < questions.length - 1 ? "block" : "none";
     prevBtn.style.display = currentQuestionIndex > 0 ? "block" : "none";
@@ -355,7 +236,7 @@ prevBtn.addEventListener("click", () => {
     }
 });
 
-  loadQuestion();
+  loadQuestion();*/
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
